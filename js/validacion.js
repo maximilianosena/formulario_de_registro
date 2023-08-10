@@ -3,7 +3,11 @@ function showAlertSuccess() {
 }
 
 function showAlertError() {
-    document.getElementById("alert-danger").classList.add("show");
+   const alertDanger=document.getElementById("alert-danger");
+  alertDanger.classList.add("show");
+  setTimeout(()=>{
+    alertDanger.classList.remove("show");
+  },2000)
 }
 
 const nombre= document.getElementById("nombre");
